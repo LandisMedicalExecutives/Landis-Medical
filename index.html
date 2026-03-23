@@ -3,61 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landis Medical Executives</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { background: #004d00; color: white; padding: 10px 20px; }
-        nav { display: flex; justify-content: space-between; }
-        nav a { color: white; text-decoration: none; padding: 10px; }
-        .hero { background-image: url('your-image-url-here'); height: 400px; display: flex; align-items: center; justify-content: center; color: white; }
-        .about, .services, .contact { padding: 20px; }
-        .service-cards { display: flex; justify-content: space-between; }
-        .service-card { background: #f4f4f4; border-radius: 5px; padding: 20px; flex: 1; margin: 0 10px; }
-        footer { background: #004d00; color: white; text-align: center; padding: 10px 0; }
-    </style>
+    <title>Landis Medical</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
+        <img src="landis_logo.png" alt="Landis Medical Logo" class="logo">
         <nav>
-            <div><h1>Landis Medical Executives</h1></div>
-            <div>
-                <a href="#Home">Home</a>
-                <a href="#About">About</a>
-                <a href="#Services">Services</a>
-                <a href="#Contact">Contact</a>
-            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </nav>
+        <a href="#" class="btn request-consult">Request Consultation</a>
     </header>
-    <div class="hero">
-        <h2>Empowering Medical Professionals</h2>
-    </div>
-    <section class="about" id="About">
-        <h2>About Us</h2>
-        <p>We provide exceptional medical executive services for professionals.</p>
+    <section class="hero">
+        <img src="doctor_image.jpg" alt="Doctor" class="hero-image">
+        <h1>Advanced Pain Management Solutions</h1>
+        <p>Your road to recovery starts here.</p>
+        <a href="#" class="btn request-consult">Request Consultation</a>
     </section>
-    <section class="services" id="Services">
+    <section class="about-us">
+        <h2>About Us</h2>
+        <p>At Landis Medical, our mission is to provide innovative pain management solutions tailored to your needs.</p>
+    </section>
+    <section class="our-services">
         <h2>Our Services</h2>
-        <div class="service-cards">
-            <div class="service-card">
-                <h3>Consulting</h3>
-                <p>Expert consultations for healthcare organizations.</p>
-            </div>
-            <div class="service-card">
-                <h3>Management</h3>
-                <p>Comprehensive management solutions.</p>
-            </div>
-            <div class="service-card">
-                <h3>Training</h3>
-                <p>Professional training for medical staff.</p>
-            </div>
+        <div class="service-card">
+            <img src="interventional_icon.png" alt="Interventional Pain Management"> 
+            <h3>Interventional Pain Management</h3>
+            <p>Cutting-edge techniques for effective pain relief.</p>
+        </div>
+        <div class="service-card">
+            <img src="diagnostic_icon.png" alt="Diagnostic Testing & Care Coordination">  
+            <h3>Diagnostic Testing & Care Coordination</h3>
+            <p>Comprehensive evaluations to guide your treatment plan.</p>
+        </div>
+        <div class="service-card">
+            <img src="support_icon.png" alt="Practice Support">  
+            <h3>Practice Support</h3>
+            <p>Support services to enhance your patient experience.</p>
         </div>
     </section>
-    <section class="contact" id="Contact">
+    <section class="contact-us">
         <h2>Contact Us</h2>
         <p>Phone: 856-213-2737</p>
     </section>
     <footer>
-        <p>&copy; 2026 Landis Medical Executives</p>
+        <p>© 2026 Landis Medical. All rights reserved.</p>
     </footer>
 </body>
 </html>
