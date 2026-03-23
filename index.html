@@ -4,53 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landis Medical Executives</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background: #004d00; color: white; padding: 10px 20px; }
+        nav { display: flex; justify-content: space-between; }
+        nav a { color: white; text-decoration: none; padding: 10px; }
+        .hero { background-image: url('your-image-url-here'); height: 400px; display: flex; align-items: center; justify-content: center; color: white; }
+        .about, .services, .contact { padding: 20px; }
+        .service-cards { display: flex; justify-content: space-between; }
+        .service-card { background: #f4f4f4; border-radius: 5px; padding: 20px; flex: 1; margin: 0 10px; }
+        footer { background: #004d00; color: white; text-align: center; padding: 10px 0; }
+    </style>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="logo.png" alt="Landis Medical Executives Logo">
-        </div>
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Our Services</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
+            <div><h1>Landis Medical Executives</h1></div>
+            <div>
+                <a href="#Home">Home</a>
+                <a href="#About">About</a>
+                <a href="#Services">Services</a>
+                <a href="#Contact">Contact</a>
+            </div>
         </nav>
     </header>
-    <section class="hero">
-        <img src="doctor-image.jpg" alt="Doctor Image">
-        <h1>Advanced Pain Management Solutions</h1>
-    </section>
-    <section id="about">
+    <div class="hero">
+        <h2>Empowering Medical Professionals</h2>
+    </div>
+    <section class="about" id="About">
         <h2>About Us</h2>
-        <p>We provide innovative pain management solutions to help our patients achieve a better quality of life.</p>
+        <p>We provide exceptional medical executive services for professionals.</p>
     </section>
-    <section id="services">
+    <section class="services" id="Services">
         <h2>Our Services</h2>
         <div class="service-cards">
-            <div class="card">
-                <h3>Interventional Pain Management</h3>
-                <p>Utilizing cutting-edge techniques for effective pain relief.</p>
+            <div class="service-card">
+                <h3>Consulting</h3>
+                <p>Expert consultations for healthcare organizations.</p>
             </div>
-            <div class="card">
-                <h3>Diagnostic Testing & Care Coordination</h3>
-                <p>Comprehensive evaluations tailored for individual patient needs.</p>
+            <div class="service-card">
+                <h3>Management</h3>
+                <p>Comprehensive management solutions.</p>
             </div>
-            <div class="card">
-                <h3>Practice Support</h3>
-                <p>Assistance with operational aspects to enhance patient care.</p>
+            <div class="service-card">
+                <h3>Training</h3>
+                <p>Professional training for medical staff.</p>
             </div>
         </div>
     </section>
-    <section id="contact">
+    <section class="contact" id="Contact">
         <h2>Contact Us</h2>
-        <p>Phone: <strong>856-213-2737</strong></p>
+        <p>Phone: 856-213-2737</p>
     </section>
     <footer>
-        <p>&copy; 2026 Landis Medical Executives. All rights reserved.</p>
+        <p>&copy; 2026 Landis Medical Executives</p>
     </footer>
 </body>
 </html>
