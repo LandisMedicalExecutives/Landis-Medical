@@ -4,48 +4,42 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Landis Medical | Pain Management & Med-Legal Support NJ</title>
-
-<meta name="description" content="Landis Medical provides interventional pain management, diagnostic testing, and strategic med-legal support in New Jersey.">
+<title>Landis Medical | NJ Pain Management & Med-Legal Support</title>
+<meta name="description" content="Interventional pain management, diagnostic care, and strategic med-legal support in New Jersey.">
 
 <style>
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: #f5f7fa;
+  background: #f7f9fc;
   color: #1f2d3d;
 }
 
-/* HEADER */
+/* NAV */
 header {
   position: sticky;
   top: 0;
-  z-index: 1000;
   background: white;
+  padding: 15px 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 50px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  z-index: 1000;
 }
 
-.logo img {
-  height: 55px;
-}
+.logo img { height: 55px; }
 
 nav a {
   margin: 0 15px;
   text-decoration: none;
   color: #334e68;
-  font-weight: 500;
 }
 
 .cta {
-  background: linear-gradient(135deg, #2b6cb0, #1c3d6e);
+  background: linear-gradient(135deg,#2b6cb0,#1c3d6e);
   color: white;
   padding: 10px 18px;
   border-radius: 8px;
@@ -53,69 +47,85 @@ nav a {
 
 /* HERO */
 .hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 80px 50px;
-}
-
-.hero-text {
-  max-width: 520px;
+  padding: 100px 60px;
+  max-width: 1100px;
+  margin: auto;
 }
 
 .hero h1 {
-  font-size: 42px;
+  font-size: 46px;
   color: #1c3d6e;
 }
 
 .hero p {
-  margin: 20px 0;
   font-size: 18px;
+  margin: 20px 0;
 }
 
 .hero button {
-  padding: 14px 22px;
-  background: linear-gradient(135deg, #2b6cb0, #1c3d6e);
+  background: linear-gradient(135deg,#2b6cb0,#1c3d6e);
   color: white;
+  padding: 14px 22px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
 }
 
+/* TRUST BAR */
+.trust {
+  background: #e6eef7;
+  padding: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+
 /* SECTIONS */
 section {
-  padding: 70px 50px;
-  text-align: center;
+  padding: 80px 60px;
+  max-width: 1100px;
+  margin: auto;
 }
 
 h2 {
   color: #1c3d6e;
+  margin-bottom: 20px;
 }
 
 /* SERVICES */
-.services-container {
+.services-grid {
   display: flex;
   gap: 25px;
-  justify-content: center;
   flex-wrap: wrap;
-  margin-top: 30px;
 }
 
 .card {
+  flex: 1;
+  min-width: 250px;
   background: white;
-  padding: 25px;
-  width: 280px;
+  padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: 0.2s;
 }
 
-/* CONTACT FORM */
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* MED-LEGAL */
+.highlight {
+  background: linear-gradient(135deg,#1c3d6e,#2b6cb0);
+  color: white;
+  border-radius: 12px;
+  padding: 40px;
+}
+
+/* FORM */
 form {
-  max-width: 500px;
-  margin: auto;
   display: flex;
   flex-direction: column;
   gap: 12px;
+  max-width: 500px;
 }
 
 input, textarea {
@@ -129,23 +139,19 @@ button.submit {
   color: white;
   border: none;
   padding: 12px;
-  border-radius: 6px;
-  cursor: pointer;
 }
 
 /* FOOTER */
 footer {
   background: #1c3d6e;
   color: white;
-  padding: 20px;
+  text-align: center;
+  padding: 30px;
 }
 
 /* MOBILE */
-@media (max-width: 800px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-  }
+@media(max-width:800px){
+  header { flex-direction: column; }
 }
 </style>
 </head>
@@ -158,44 +164,48 @@ footer {
   </div>
 
   <nav>
-    <a href="#about">About</a>
     <a href="#services">Services</a>
+    <a href="#medlegal">Med-Legal</a>
     <a href="#contact">Contact</a>
     <a href="#contact" class="cta">Request Consultation</a>
   </nav>
 </header>
 
 <div class="hero">
-  <div class="hero-text">
-    <h1>Advanced Pain Management Solutions</h1>
-    <p>Delivering expert care through innovation, precision, and coordinated support.</p>
-    <button onclick="location.href='#contact'">Request Consultation</button>
-  </div>
+  <h1>Precision Pain Management & Strategic Med-Legal Support</h1>
+  <p>Serving New Jersey patients and personal injury professionals through coordinated, high-quality care.</p>
+  <button onclick="location.href='#contact'">Request Consultation</button>
 </div>
 
-<section id="about">
-  <h2>About Us</h2>
-  <p>Landis Medical delivers advanced interventional pain care and coordinated services supporting both patients and legal professionals.</p>
-</section>
+<div class="trust">
+  Trusted by patients and personal injury professionals across New Jersey
+</div>
 
 <section id="services">
-  <h2>Our Services</h2>
+  <h2>Core Services</h2>
 
-  <div class="services-container">
+  <div class="services-grid">
     <div class="card">
       <h3>Interventional Pain Management</h3>
-      <p>Targeted procedures designed for effective and lasting pain relief.</p>
+      <p>Advanced procedures focused on long-term pain relief.</p>
     </div>
 
     <div class="card">
       <h3>Diagnostic Testing & Care Coordination</h3>
-      <p>Comprehensive evaluation and streamlined patient management.</p>
+      <p>Comprehensive diagnostics with seamless patient coordination.</p>
     </div>
 
     <div class="card">
       <h3>Strategic Med-Legal Support</h3>
       <p>Coordinated support bridging medical care and legal case management for personal injury matters.</p>
     </div>
+  </div>
+</section>
+
+<section id="medlegal">
+  <div class="highlight">
+    <h2>Built for Personal Injury Cases</h2>
+    <p>We work closely with attorneys to ensure timely care, accurate documentation, and coordinated treatment plans that support case outcomes.</p>
   </div>
 </section>
 
@@ -206,8 +216,8 @@ footer {
     <input type="text" name="name" placeholder="Full Name" required>
     <input type="email" name="email" placeholder="Email" required>
     <input type="tel" name="phone" placeholder="Phone Number">
-    <textarea name="message" rows="4" placeholder="How can we help?" required></textarea>
-    <button class="submit">Submit Request</button>
+    <textarea name="message" placeholder="How can we help?" required></textarea>
+    <button class="submit">Submit</button>
   </form>
 
   <p>Or call: <a href="tel:8562132737">856-213-2737</a></p>
