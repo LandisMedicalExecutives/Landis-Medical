@@ -4,35 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landis Medical</title>
-    <style>
-        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; }
-        header { background-color: teal; padding: 20px; text-align: center; }
-        h1 { color: white; }
-        .hero { background-image: url('path/to/doctor-image.jpg'); height: 400px; background-size: cover; }
-        .services { display: flex; justify-content: space-around; padding: 20px; }
-        .service-card { background-color: white; border: 1px solid #ddd; border-radius: 5px; padding: 20px; }
-        footer { text-align: center; padding: 20px; background-color: teal; color: white; }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <img src="path/to/logo.png" alt="Landis Medical Logo" />
-        <h1>Welcome to Landis Medical</h1>
+        <div class="logo">
+            <img src="path_to_landis_logo.png" alt="Landis Medical Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <div class="hero">
-    </div>
-    <div class="services">
+    <section class="hero" id="home">
+        <img src="https://source.unsplash.com/random/800x600" alt="Doctor Image">
+        <h1>Welcome to Landis Medical</h1>
+        <p>Your health is our priority.</p>
+    </section>
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>We provide exceptional medical services and care.</p>
+    </section>
+    <section class="services" id="services">
+        <h2>Our Services</h2>
         <div class="service-card">
-            <h2>Service 1</h2>
-            <p>Description of service 1.</p>
+            <h3>Consultation</h3>
+            <img src="path_to_icon.png" alt="Consultation Icon">
+            <p>Expert medical consultations.</p>
         </div>
         <div class="service-card">
-            <h2>Service 2</h2>
-            <p>Description of service 2.</p>
+            <h3>Treatment</h3>
+            <img src="path_to_icon.png" alt="Treatment Icon">
+            <p>Comprehensive treatment plans.</p>
         </div>
-    </div>
+        <div class="service-card">
+            <h3>Emergency Care</h3>
+            <img src="path_to_icon.png" alt="Emergency Care Icon">
+            <p>24/7 emergency assistance.</p>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Get in touch with our team.</p>
+    </section>
     <footer>
-        <p>&copy; Landis Medical 2026</p>
+        <p>&copy; 2026 Landis Medical. All rights reserved.</p>
     </footer>
 </body>
 </html>
