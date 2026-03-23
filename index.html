@@ -3,29 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landis Medical Executives</title>
+    <title>Landis Medical</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            margin: 1rem 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .service-cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+        .service-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+        footer {
+            background: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Landis Medical Executives</h1>
+        <h1>Welcome to Landis Medical</h1>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
-    <section id="services">
-        <div class="card">
-            <h2>Interventional Pain Management</h2>
-            <p>Personalised treatment plans focused on long-term pain relief.</p>
+    <div class="service-cards">
+        <div class="service-card">
+            <h3>Service One</h3>
+            <p>Description of service one.</p>
         </div>
-        <div class="card">
-            <h2>Diagnostic Testing & Care Coordination</h2>
-            <p>Comprehensive diagnostics and coordinated care for optimal outcomes.</p>
+        <div class="service-card">
+            <h3>Service Two</h3>
+            <p>Description of service two.</p>
         </div>
-        <div class="card">
-            <h2>Strategic Med-Legal Support</h2>
-            <p>Coordinated support bridging medical care and legal case management for personal injury matters.</p>
+        <div class="service-card">
+            <h3>Service Three</h3>
+            <p>Description of service three.</p>
         </div>
-    </section>
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Phone: 856-213-2737</p>
-    </section>
+    </div>
+    <footer>
+        <p>&copy; 2026 Landis Medical. All rights reserved.</p>
+    </footer>
 </body>
 </html>
