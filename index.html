@@ -3,50 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Advanced Pain Management Solutions</title>
+    <title>Landis Medical</title>
     <style>
-        body {font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333;}
-        header {background-color: #007BFF; padding: 10px; color: white; display: flex; justify-content: space-between; align-items: center;}
-        header h1 {margin: 0;}
-        nav a {color: white; margin-left: 15px; text-decoration: none;}
-        .hero {background-image: url('https://source.unsplash.com/featured/?doctor'); background-size: cover; color: white; padding: 80px 20px; text-align: center;}
-        .section {padding: 20px;}
-        .cards {display: flex; justify-content: space-around;}
-        .card {border: 1px solid #ddd; border-radius: 5px; padding: 20px; width: 30%;}
-        footer {background-color: #007BFF; color: white; text-align: center; padding: 10px;}
+        body { font-family: Arial, sans-serif; margin: 0; }
+        header { background-color: white; padding: 20px; text-align: center; }
+        .logo { height: 50px; }
+        nav { margin: 20px 0; }
+        nav a { margin: 0 15px; text-decoration: none; color: black; }
+        .button { background-color: blue; color: white; padding: 10px 15px; text-align: center; border: none; border-radius: 5px; }
+        .hero { background: linear-gradient(lightblue, white); padding: 50px; display: flex; justify-content: space-between; align-items: center; }
+        .hero img { max-width: 300px; }
+        .about, .services, .contact { padding: 20px; background-color: white; }
+        .service-card { background-color: lightgray; padding: 10px; margin: 10px; border-radius: 5px; }
+        footer { background-color: darkblue; color: white; text-align: center; padding: 10px; }
     </style>
 </head>
 <body>
     <header>
-        <h1>Landis Medical</h1>
+        <img src="path_to_landis_logo" alt="LANDIS MEDICAL" class="logo" />
         <nav>
-            <a href="#about">About Us</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
         </nav>
+        <button class="button">Request Consultation</button>
     </header>
-    <div class="hero">
-        <h2>Advanced Pain Management Solutions</h2>
-    </div>
-    <section id="about" class="section">
-        <h2>About Us</h2>
-        <p>We provide innovative pain management solutions tailored to each patient’s needs.</p>
-    </section>
-    <section id="services" class="section">
-        <h2>Our Services</h2>
-        <div class="cards">
-            <div class="card"><h3>Interventional Pain Management</h3><p>Offering cutting-edge procedures for pain relief.</p></div>
-            <div class="card"><h3>Diagnostic Testing & Care Coordination</h3><p>Comprehensive testing and support for your care.</p></div>
-            <div class="card"><h3>Practice Support</h3><p>Guidance and resources for effective practice management.</p></div>
+    <section class="hero">
+        <div>
+            <h1>Advanced Pain Management Solutions</h1>
+            <p>Delivering expert care through innovation, precision, and compassion</p>
+            <button class="button">Request Consultation</button>
         </div>
+        <img src="https://source.unsplash.com/300x300/?doctor" alt="Doctor">
     </section>
-    <section id="contact" class="section">
+    <section class="about">
+        <h2>About Us</h2>
+        <p>Company description goes here...</p>
+    </section>
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-card">Interventional Pain Management</div>
+        <div class="service-card">Diagnostic Testing & Care Coordination</div>
+        <div class="service-card">Practice Support</div>
+    </section>
+    <section class="contact">
         <h2>Contact Us</h2>
-        <p>Phone: 856-213-2737</p>
+        <p>Phone Number: 856-213-2737</p>
     </section>
     <footer>
-        <p>&copy; 2026 Landis Medical Executives</p>
+        <p>&copy; 2026 Landis Medical. All rights reserved.</p>
     </footer>
 </body>
 </html>
