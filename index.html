@@ -3,32 +3,38 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Landis Medical</title>
+
+<title>Landis Medical | Pain Management & Med-Legal Support NJ</title>
+
+<meta name="description" content="Landis Medical provides interventional pain management, diagnostic testing, and strategic med-legal support in New Jersey.">
 
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
   background: #f5f7fa;
   color: #1f2d3d;
 }
 
+/* HEADER */
 header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 60px;
-  background: #ffffff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 15px 50px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 .logo img {
-  height: 50px;
+  height: 55px;
 }
 
 nav a {
@@ -43,15 +49,14 @@ nav a {
   color: white;
   padding: 10px 18px;
   border-radius: 8px;
-  text-decoration: none;
 }
 
+/* HERO */
 .hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 90px 60px;
-  background: linear-gradient(to right, #e6eef7, #f5f7fa);
+  padding: 80px 50px;
 }
 
 .hero-text {
@@ -59,107 +64,87 @@ nav a {
 }
 
 .hero h1 {
-  font-size: 44px;
+  font-size: 42px;
   color: #1c3d6e;
-  margin-bottom: 20px;
 }
 
 .hero p {
+  margin: 20px 0;
   font-size: 18px;
-  color: #52606d;
-  margin-bottom: 30px;
 }
 
 .hero button {
+  padding: 14px 22px;
   background: linear-gradient(135deg, #2b6cb0, #1c3d6e);
   color: white;
-  padding: 14px 22px;
   border: none;
   border-radius: 8px;
-  font-size: 16px;
   cursor: pointer;
 }
 
-.hero img {
-  width: 420px;
-  border-radius: 12px;
-}
-
+/* SECTIONS */
 section {
-  padding: 80px 60px;
+  padding: 70px 50px;
   text-align: center;
 }
 
 h2 {
-  font-size: 34px;
   color: #1c3d6e;
-  margin-bottom: 20px;
 }
 
-.about p {
-  max-width: 720px;
-  margin: auto;
-  color: #52606d;
-  line-height: 1.6;
-}
-
-.services {
-  background: linear-gradient(to bottom, #f5f7fa, #e6eef7);
-}
-
+/* SERVICES */
 .services-container {
   display: flex;
+  gap: 25px;
   justify-content: center;
-  gap: 30px;
-  margin-top: 40px;
   flex-wrap: wrap;
+  margin-top: 30px;
 }
 
 .card {
   background: white;
-  padding: 30px;
-  border-radius: 14px;
+  padding: 25px;
   width: 280px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 
-.card h3 {
-  color: #1c3d6e;
-  margin-bottom: 10px;
+/* CONTACT FORM */
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-.card p {
-  color: #52606d;
-  font-size: 14px;
+input, textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
 }
 
-.contact p {
-  font-size: 18px;
-  margin-top: 10px;
-}
-
-footer {
-  background: linear-gradient(135deg, #1c3d6e, #2b6cb0);
+button.submit {
+  background: #2b6cb0;
   color: white;
-  text-align: center;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  background: #1c3d6e;
+  color: white;
   padding: 20px;
 }
 
-@media (max-width: 900px) {
+/* MOBILE */
+@media (max-width: 800px) {
   .hero {
     flex-direction: column;
     text-align: center;
-  }
-
-  .hero img {
-    margin-top: 30px;
-    width: 100%;
-    max-width: 350px;
-  }
-
-  header {
-    flex-direction: column;
-    gap: 10px;
   }
 }
 </style>
@@ -169,51 +154,42 @@ footer {
 
 <header>
   <div class="logo">
-    <!-- Embedded Logo -->
-    <img src="data:image/png;base64,REPLACE_WITH_BASE64_LOGO" alt="Landis Medical Logo">
+    <img src="data:image/png;base64,REPLACE_LOGO">
   </div>
 
   <nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Contact</a>
-    <a href="#" class="cta">Request Consultation</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="cta">Request Consultation</a>
   </nav>
 </header>
 
 <div class="hero">
   <div class="hero-text">
     <h1>Advanced Pain Management Solutions</h1>
-    <p>Delivering expert care through innovation, precision, and compassion.</p>
-    <button>Request Consultation</button>
+    <p>Delivering expert care through innovation, precision, and coordinated support.</p>
+    <button onclick="location.href='#contact'">Request Consultation</button>
   </div>
-
-  <!-- Clean placeholder image -->
-  <img src="https://images.unsplash.com/photo-1580281657527-47c6b6d9e8b1?q=80&w=800" alt="Medical">
 </div>
 
-<section class="about">
+<section id="about">
   <h2>About Us</h2>
-  <p>
-    Landis Medical is dedicated to providing high-quality pain management solutions.
-    Our mission is to improve patient outcomes through advanced treatments,
-    operational excellence, and patient-centered care.
-  </p>
+  <p>Landis Medical delivers advanced interventional pain care and coordinated services supporting both patients and legal professionals.</p>
 </section>
 
-<section class="services">
+<section id="services">
   <h2>Our Services</h2>
 
   <div class="services-container">
     <div class="card">
       <h3>Interventional Pain Management</h3>
-      <p>Personalized treatment plans focused on long-term pain relief.</p>
+      <p>Targeted procedures designed for effective and lasting pain relief.</p>
     </div>
 
     <div class="card">
       <h3>Diagnostic Testing & Care Coordination</h3>
-      <p>Comprehensive diagnostics and coordinated care for optimal outcomes.</p>
+      <p>Comprehensive evaluation and streamlined patient management.</p>
     </div>
 
     <div class="card">
@@ -223,9 +199,18 @@ footer {
   </div>
 </section>
 
-<section class="contact">
-  <h2>Contact Us</h2>
-  <p>Phone: 856-213-2737</p>
+<section id="contact">
+  <h2>Request Consultation</h2>
+
+  <form action="https://formspree.io/f/YOUR-ID" method="POST">
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="tel" name="phone" placeholder="Phone Number">
+    <textarea name="message" rows="4" placeholder="How can we help?" required></textarea>
+    <button class="submit">Submit Request</button>
+  </form>
+
+  <p>Or call: <a href="tel:8562132737">856-213-2737</a></p>
 </section>
 
 <footer>
